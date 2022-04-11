@@ -22,7 +22,7 @@
         </td>
         <td align="center">
             <a href="https://github.com/juliavaz">
-                <img src="https://avatars.githubusercontent.com/u/50247060?v=4" width="100px;" alt="" /><br />
+                <img src="https://github.com/juliavaz.png" width="100px;" alt="" /><br />
                 <sub><b>Júlia Vaz</b></sub>
             </a><br />
             <a href="https://github.com/juliavaz/" title="Code">💻</a>
@@ -30,7 +30,7 @@
         </td>
         <td align="center">
             <a href="https://github.com/leandrofaria">
-                <img src="https://avatars.githubusercontent.com/u/14020366?v=4" width="100px;" alt="" /><br />
+                <img src="https://github.com/leandrofaria.png" width="100px;" alt="" /><br />
                 <sub><b>Leandro Faria</b></sub>
             </a><br />
             <a href="https://github.com/leandrofaria" title="Code">💻</a>
@@ -38,15 +38,23 @@
         </td>
         <td align="center">
             <a href="https://github.com/Henriquedevb">
-                <img src="https://avatars.githubusercontent.com/u/66540402?v=4" width="100px;" alt="" /><br />
+                <img src="https://github.com/Henriquedevb.png" width="100px;" alt="" /><br />
                 <sub><b>Henrique Fontenele</b></sub>
             </a><br />
             <a href="https://github.com/Henriquedevb" title="Code">💻</a>
             <a href="#ideas" title="Ideas, Planning, & Feedback">🤔</a>
          </td>
          <td align="center">
+            <a href="https://github.com/Rfdecc">
+                <img src="https://github.com/Rfdecc.png" width="100px;" alt="" /><br />
+                <sub><b>Roman Fernando</b></sub>
+            </a><br />
+            <a href="https://github.com/Rfdecc" title="Code">💻</a>
+            <a href="#ideas" title="Ideas, Planning, & Feedback">🤔</a>
+         </td>
+         <td align="center">
             <a href="https://github.com/Barbarafcaputo23">
-                <img src="https://avatars.githubusercontent.com/u/70297270?v=4" width="100px;" alt="" /><br />
+                <img src="https://github.com/Barbarafcaputo23.png" width="100px;" alt="" /><br />
                 <sub><b>Bárbara Caputo</b></sub>
             </a><br />
             <a href="https://github.com/Barbarafcaputo23" title="Code">💻</a>
