@@ -2,16 +2,16 @@ import * as React from 'react';
 import { Pressable, TextInput, View, ImageBackground, Image, Text, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export default function LoginScreen({ navigation }) {
+export default function LoginScreen ({ navigation }) {
 
   const [email, onChangeEmail] = React.useState('');
   const [password, onChangePassword] = React.useState('');
 
   return (
-      <LinearGradient
-        colors={['rgba(110, 219, 94, 1)', 'rgba(146, 227, 143, 1)', 'rgba(55,181,151,1)']}
-        style={styles.container}
-      >
+    <LinearGradient
+      colors={['rgba(110, 219, 94, 1)', 'rgba(146, 227, 143, 1)', 'rgba(55,181,151,1)']}
+      style={styles.container}
+    >
       <Image source={require('../assets/img/pi-logo.png')} resizeMethod="resize" style={styles.logo}></Image>
       <Text style={styles.appName}>
         IESB Chat
@@ -28,11 +28,13 @@ export default function LoginScreen({ navigation }) {
         value={password}
         placeholder='Digite sua senha'
       />
-      <Pressable style={styles.button} onPress={() => navigation.navigate('SalasScreen')}>Login</Pressable>
-      <Pressable style={styles.link} onPress={()=> navigation.navigate('CadastroScreen')}>
-        Não tenho cadastro
+      <Pressable style={styles.button} onPress={() => navigation.navigate('SalasScreen')}>
+        <Text>Login</Text>
       </Pressable>
-      </LinearGradient>
+      <Pressable style={styles.link} onPress={() => navigation.navigate('CadastroScreen')}>
+        <Text>Não tenho cadastro</Text>
+      </Pressable>
+    </LinearGradient>
   );
 }
 
@@ -50,7 +52,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: 'bold',
     color: '#ffffff',
-    textShadowOffset: {width: 2, height: 2},
+    textShadowOffset: { width: 2, height: 2 },
     textShadowRadius: 5,
     textShadowColor: 'rgba(0, 0, 0, 0.5)',
     paddingBottom: 20,
@@ -76,7 +78,7 @@ const styles = StyleSheet.create({
     shadowColor: '#000000',
     shadowOpacity: 0.2,
     shadowRadius: 5,
-    shadowOffset: {width: 1, height: 2},
+    shadowOffset: { width: 1, height: 2 },
   },
   input: {
     height: 40,

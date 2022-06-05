@@ -2,7 +2,7 @@ import * as React from 'react';
 import { Pressable, TextInput, View, ImageBackground, Image, Text, StyleSheet } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 
-export default function CadastroScreen({ navigation }) {
+export default function CadastroScreen ({ navigation }) {
 
   const [nickname, onChangeNickname] = React.useState('');
   const [email, onChangeEmail] = React.useState('');
@@ -10,10 +10,10 @@ export default function CadastroScreen({ navigation }) {
   const [passwordConfirm, onChangePasswordConfirm] = React.useState('');
 
   return (
-      <LinearGradient
-        colors={['rgba(110, 219, 94, 1)', 'rgba(146, 227, 143, 1)', 'rgba(55,181,151,1)']}
-        style={styles.container}
-      >
+    <LinearGradient
+      colors={['rgba(110, 219, 94, 1)', 'rgba(146, 227, 143, 1)', 'rgba(55,181,151,1)']}
+      style={styles.container}
+    >
       <View style={styles.navBar}>
         <Image source={require('../assets/img/pi-logo.png')} resizeMethod="resize" style={styles.logo}></Image>
         <Text style={styles.appName}>
@@ -24,7 +24,7 @@ export default function CadastroScreen({ navigation }) {
         Cadastro
       </Text>
       <View style={styles.card}>
-        <Text style={{fontWeight: 'bold', marginBottom: 10}}>
+        <Text style={{ fontWeight: 'bold', marginBottom: 10 }}>
           Para realizar o seu cadastro por favor preencha os dados abaixo.
         </Text>
         <TextInput
@@ -44,21 +44,27 @@ export default function CadastroScreen({ navigation }) {
           onChangeText={onChangePassword}
           value={password}
           placeholder='Sua senha'
-          secureTextEntry='true'
+        // secureTextEntry='true'
         />
         <TextInput
           style={styles.input}
           onChangeText={onChangePasswordConfirm}
           value={passwordConfirm}
           placeholder='Confirme sua senha'
-          secureTextEntry='true'
+        // secureTextEntry='true'
         />
       </View>
-      <Pressable style={styles.button} onPress={() => navigation.navigate('SalasScreen')}>Cadastrar</Pressable>
-      <Pressable style={styles.link} onPress={() => navigation.navigate('LoginScreen')}>
-        Já tenho cadastro
+      <Pressable style={styles.button} onPress={() => navigation.navigate('SalasScreen')}>
+        <Text>
+          Cadastrar
+        </Text>
       </Pressable>
-      </LinearGradient>
+      <Pressable style={styles.link} onPress={() => navigation.navigate('LoginScreen')}>
+        <Text>
+          Já tenho cadastro
+        </Text>
+      </Pressable>
+    </LinearGradient>
   );
 }
 
@@ -66,7 +72,7 @@ export default function CadastroScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'start',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     textAlign: 'center',
     padding: 8,
@@ -89,7 +95,7 @@ const styles = StyleSheet.create({
     color: '#ffffff',
     fontWeight: 'bold',
     fontSize: 20,
-    textShadowOffset: {width: 2, height: 2},
+    textShadowOffset: { width: 2, height: 2 },
     textShadowRadius: 5,
     textShadowColor: 'rgba(0, 0, 0, 0.3)',
     padding: 10,
@@ -99,7 +105,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     fontWeight: 'bold',
     color: '#ffffff',
-    textShadowOffset: {width: 2, height: 2},
+    textShadowOffset: { width: 2, height: 2 },
     textShadowRadius: 5,
     textShadowColor: 'rgba(0, 0, 0, 0.5)',
     paddingBottom: 20,
@@ -126,7 +132,7 @@ const styles = StyleSheet.create({
     shadowColor: '#000000',
     shadowOpacity: 0.2,
     shadowRadius: 5,
-    shadowOffset: {width: 1, height: 2},
+    shadowOffset: { width: 1, height: 2 },
   },
   input: {
     height: 40,

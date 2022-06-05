@@ -118,7 +118,7 @@ export default function SalasScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'start',
+    justifyContent: 'flex-start',
     alignItems: 'center',
     textAlign: 'center',
     fontFamily: 'Arial',
@@ -158,7 +158,7 @@ const styles = StyleSheet.create({
     display: "flex",
     width: '100%',
     backgroundColor: "#fff",
-    borderRadius: "8px",
+    borderRadius: 8,
     padding: 20,
     marginTop: 10,
     marginBottom: 10
