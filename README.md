@@ -1,6 +1,7 @@
 # Projeto Integrado Mobile
-- [ ] Elaborar um Figma
-- [ ] Elaborar o Front-end do mobile
+- [X] Elaborar um Figma
+    - [X] [Protótipo dinâmico](https://www.figma.com/proto/RclSUzNA6pT6qzlPKGZfg1/IESB-Chat?node-id=1%3A1167&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A408&show-proto-sidebar=1)
+- [X] Elaborar o Front-end do mobile
 - [ ] Elaborar o Back-end do mobile
 
 #
